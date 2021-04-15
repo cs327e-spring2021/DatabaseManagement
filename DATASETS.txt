@@ -1,0 +1,8 @@
+Primary Dataset: Hollywood Movies, Directors, Actors (https://datasets.imdbws.com/)
+Secondary Dataset: Bollywood Movies, Actors, and Songs (https://www.kaggle.com/alokdas527/bollywood-movies-analysis)
+Interesting Entities: We noticed that the given regions with sufficient numbers of total votes, shows and movies from the XAU region have the highest ratings on average. Additionally, the 10 regions with the total number of votes have lower ratings, generally averaging 6.5-6.7 stars.
+
+Potential Insights: Through this dataset, we hope to gain additional insights in statistics regarding movies, TV shows, and specific actors within multiple regions. Additionally, we hope to better understand what factors may improve overall ratings on imdb, whether it be location, director, cast, number of episodes, etc.
+
+
+Lastly, we noticed that the bollywood table could not be joined with the bollywood actors table, as there were no columns shared by the actors and movies table that could be used as an inner join. We can solve this in the future by utilizing the cast column in the bollywood movies table. During the later data manipulation and cleansing segments, we can convert the cast column into an array, and then respectively join the two tables in the occurence of said actors being in the cast array.
